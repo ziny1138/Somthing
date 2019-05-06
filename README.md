@@ -9,3 +9,15 @@ def pobierz_dane(liczba_cyfr):
 
 d=int(input("Podaj liczbę cyfr:"))
 print(pobierz_dane(d))
+
+
+
+def parzysto(liczba):
+    for i in range(liczba):
+        if liczba%2 == 0:
+            return ("prawda")
+        else:
+            return ("fałsz")
+
+for i in ziemniak:
+    print(parzysto(i))
