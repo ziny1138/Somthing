@@ -11,13 +11,15 @@ d=int(input("Podaj liczbę cyfr:"))
 print(pobierz_dane(d))
 
 
+def srodkowy(lista):
+    if len(lista)==1 or len(lista)==2:
+        return lista
+    else:
+        return srodkowy(lista[1:-1])
 
-def parzysto(liczba):
-    for i in range(liczba):
-        if liczba%2 == 0:
-            return ("prawda")
-        else:
-            return ("fałsz")
 
-for i in ziemniak:
-    print(parzysto(i))
+
+
+xd=srodkowy(ziemniak)
+
+print(xd)
